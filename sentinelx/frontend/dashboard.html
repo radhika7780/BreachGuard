@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelX | Dark Web Breach Monitor</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <div id="app-container">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar">
+            <div class="sidebar-logo">
+                <span class="text-neon-blue">Sentinel</span><span style="color:white">X</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Monitored Emails
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                    Alerts
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                    Risk Analytics
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Username Intelligence
+                </a>
+            </nav>
+            <div style="padding: 2rem;">
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path
+                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                        </path>
+                    </svg>
+                    Settings
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main id="main-content">
+            <header style="margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h1 style="font-size: 2rem;">Security Overview</h1>
+                    <p style="color: var(--text-secondary);">Welcome back, Developer</p>
+                </div>
+                <div class="glass-card" style="padding: 10px 20px; display: flex; align-items: center; gap: 15px;">
+                    <div style="text-align: right;">
+                        <p style="font-size: 0.875rem; font-weight: 500;">Status: Secure</p>
+                        <p style="font-size: 0.75rem; color: var(--accent-green);">Auto-Scan Active</p>
+                    </div>
+                    <div
+                        style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-blue-glow); border: 1px solid var(--accent-blue);">
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Overview Stats -->
+            <div class="dashboard-grid" id="stats-overview">
+                <div class="glass-card stat-card">
+                    <p class="stat-label">Total Monitored</p>
+                    <p class="stat-value">12</p>
+                    <p style="font-size: 0.75rem; color: var(--accent-blue); margin-top: 5px;">+2 this week</p>
+                </div>
+                <div class="glass-card stat-card">
+                    <p class="stat-label">Compromised</p>
+                    <p class="stat-value text-neon-red">3</p>
+                    <p style="font-size: 0.75rem; color: var(--accent-red); margin-top: 5px;">Critical Action Req.</p>
+                </div>
+                <div class="glass-card stat-card">
+                    <p class="stat-label">Safe Emails</p>
+                    <p class="stat-value">9</p>
+                    <p style="font-size: 0.75rem; color: var(--accent-green); margin-top: 5px;">Verified Secure</p>
+                </div>
+                <div class="glass-card risk-meter-container">
+                    <p class="stat-label">Overall Risk Score</p>
+                    <div class="circular-meter">
+                        <span class="meter-value text-neon-blue">68</span>
+                    </div>
+                    <p class="badge badge-safe" style="font-size: 0.65rem;">Moderate</p>
+                </div>
+            </div>
+
+            <div class="sections-grid">
+                <!-- Main Activity Area -->
+                <div class="activity-area">
+                    <!-- Add Email Section -->
+                    <section class="glass-card" style="padding: 1.5rem; margin-bottom: 1.5rem;">
+                        <h3>Add Email to Monitor</h3>
+                        <p style="font-size: 0.875rem; color: var(--text-secondary);">Expand your perimeter by adding
+                            new identities.</p>
+                        <div class="input-group">
+                            <input type="email" placeholder="user@secure.io" class="premium-input">
+                            <button class="premium-btn">Add to Monitor</button>
+                        </div>
+                    </section>
+
+                    <!-- Monitored Emails Section -->
+                    <section>
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h3>Monitored Assets</h3>
+                            <a href="#"
+                                style="color: var(--accent-blue); text-decoration: none; font-size: 0.875rem;">View
+                                All</a>
+                        </div>
+                        <div id="email-cards-container" style="display: flex; flex-direction: column; gap: 1rem;">
+                            <!-- Monitored Email Card Wrapper -->
+                        </div>
+                    </section>
+
+                    <!-- Breach History Timeline Section -->
+                    <section style="margin-top: 3rem;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h3>Breach History</h3>
+                            <div style="display: flex; gap: 10px;">
+                                <span class="badge badge-danger">High Severity</span>
+                                <span class="badge"
+                                    style="background: rgba(255, 165, 0, 0.1); color: orange; border: 1px solid rgba(255, 165, 0, 0.2);">Medium</span>
+                            </div>
+                        </div>
+                        <div class="timeline" id="breach-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                        <h4 class="text-neon-red">LinkedIn Data Leak</h4>
+                                        <span style="font-size: 0.75rem; color: var(--text-secondary);">Oct 12,
+                                            2025</span>
+                                    </div>
+                                    <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 10px;">
+                                        Passwords, emails, and professional details leaked from a dark web dump.</p>
+                                    <div style="display: flex; gap: 15px; font-size: 0.75rem;">
+                                        <span style="color: var(--accent-red);">⚠ Critical Severity</span>
+                                        <span style="color: var(--text-muted);">ID: #BW-9902</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar Widgets -->
+                <aside class="widgets-area">
+                    <!-- Auto Monitoring Section -->
+                    <section class="glass-card" style="padding: 1.5rem; margin-bottom: 1.5rem;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h3>Auto Monitor</h3>
+                            <div id="monitor-toggle"
+                                style="width: 40px; height: 20px; background: var(--accent-blue); border-radius: 10px; position: relative; cursor: pointer;">
+                                <div id="toggle-circle"
+                                    style="width: 16px; height: 16px; background: black; border-radius: 50%; position: absolute; right: 2px; top: 2px; transition: var(--transition-fast);">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="font-size: 0.875rem; color: var(--text-secondary);">
+                            <p>Status: <span id="monitor-status" style="color: var(--accent-green);">Enabled</span></p>
+                            <p>Last checked: 2h ago</p>
+                            <p>Next check: <span id="countdown" class="text-neon-blue">00:45:12</span></p>
+                        </div>
+                    </section>
+
+                    <!-- Remediation Assistant Panel -->
+                    <section class="glass-card" style="padding: 1.5rem; margin-bottom: 1.5rem;">
+                        <h3>Remediation Assistant</h3>
+                        <div style="margin-top: 1rem;">
+                            <div class="guidance-step">
+                                <div class="guidance-number">1</div>
+                                <div>
+                                    <p style="font-size: 0.875rem; font-weight: 600;">Enable 2FA</p>
+                                    <p style="font-size: 0.75rem; color: var(--text-secondary);">Multi-factor
+                                        authentication prevents unauthorized access.</p>
+                                </div>
+                            </div>
+                            <button class="premium-btn"
+                                style="width: 100%; margin-top: 1.5rem; font-size: 0.8rem;">Start Secure
+                                Recovery</button>
+                        </div>
+                    </section>
+
+                    <!-- Alert Center History -->
+                    <section class="glass-card" style="padding: 1.5rem; margin-top: 1.5rem;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h3>Alert Center</h3>
+                            <button id="simulate-alert" class="details-btn"
+                                style="padding: 4px 10px; font-size: 0.7rem;">Simulate Alert</button>
+                        </div>
+                        <div id="alert-list" style="display: flex; flex-direction: column; gap: 10px;">
+                            <div class="alert-notification"
+                                style="background: rgba(0, 242, 255, 0.05); border-color: var(--accent-blue); color: var(--text-primary); margin-bottom: 0;">
+                                <p style="font-size: 0.85rem;">System initialized. Scanning 12 targets.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Username Intelligence -->
+                    <section class="glass-card" style="padding: 1.5rem; margin-top: 1.5rem;">
+                        <h3>Username variation</h3>
+                        <div id="username-variants">
+                            <div class="username-intel-card">
+                                <div>
+                                    <p style="font-size: 0.85rem; font-weight: 600;">jessani_rad_99</p>
+                                    <div class="confidence-meter" style="margin-top: 5px;">
+                                        <div class="confidence-fill" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <button class="details-btn"
+                                    style="padding: 2px 8px; font-size: 0.65rem;">Monitor</button>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/alerts.js"></script>
+</body>
+
+</html>
